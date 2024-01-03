@@ -15,31 +15,31 @@ const Order = ({ closeModal, order }) => {
               <div className="flex-1 flex flex-col gap-2">
                 <span>
                   <span className="font-semibold">{t("customername")}:</span>{" "}
-                  {order.customer.customername}
+                  {order.customer?.customername}
                 </span>
                 <span>
                   <span className="font-semibold">{t("companyname")}:</span>{" "}
-                  {order.customer.companyname}
+                  {order.customer?.companyname}
                 </span>
                 <span>
                   <span className="font-semibold">{t("phone")}:</span>{" "}
-                  {order.customer.phone}
+                  {order.customer?.phone}
                 </span>
                 <span>
                   <span className="font-semibold">{t("email")}:</span>{" "}
-                  {order.customer.email}
+                  {order.customer?.email}
                 </span>
               </div>
               <div className="flex-1 flex flex-col gap-2 items-end">
                 <span>
                   <span className="font-semibold">{t("constituent")}:</span>{" "}
-                  {order.username}
+                  {order?.username}
                 </span>
                 <span>
                   <span className="font-semibold">
                     {t("order_creation_date")}:
                   </span>{" "}
-                  {order.order_date.split("T")[0]}
+                  {order?.order_date.split("T")[0]}
                 </span>
                 <span>
                   <span className="font-semibold">{t("order_status")}:</span>{" "}
@@ -47,7 +47,7 @@ const Order = ({ closeModal, order }) => {
                 </span>
                 <span>
                   <span className="font-semibold">{t("order_number")}:</span>{" "}
-                  {order.order_number}
+                  {order?.order_number}
                 </span>
               </div>
             </div>
