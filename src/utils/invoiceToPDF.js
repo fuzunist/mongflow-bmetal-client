@@ -2581,7 +2581,7 @@ const invoiceToPDF = async (
   // fatura doldurulur.
   worksheet.getCell("F6").value = orderNumber;
   worksheet.getCell("K8").value = values.formattedDate;
-  worksheet.getCell("C12").value = "ATA FIBER";
+  worksheet.getCell("C12").value = "B-Metal";
   worksheet.getCell("C13").value = "";
   worksheet.getCell("C14").value = "";
   worksheet.getCell("C15").value = user.fullname;
