@@ -103,7 +103,6 @@ const Orders = () => {
         }
     }, [])
 
-     console.log("userrr tyyype:", user.usertype)
     return (
         <>
             <Header />
@@ -115,11 +114,10 @@ const Orders = () => {
                 myOrders={[...myOrders[0]].concat(...myPendingOrders)}
             />
             {page === 'myOrders' && myPendingOrders.length > 0 && (
-                <Row >
+                <Row>
                     <div className='flex flex-col pt-6 px-2 rounded border-2 border-alert-danger-fg-light dark:border-alert-danger-fg-dark w-full mx-4 mb-6 relative'>
                         <span className='absolute -top-5 left-2 py-2 px-4 text-lg font-semibold bg-body-bg-light dark:bg-body-bg-dark'>
-                            {/* {user.usertype!=="production_manager" ?  t('pending-orders') : t('pending-recipes') } */}
-                           { t('pending-recipes')}
+                            {t('pending-orders')}
                         </span>
                         {myPendingOrders.map((order, index) => (
                             <Order

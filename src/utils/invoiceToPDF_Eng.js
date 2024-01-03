@@ -2181,14 +2181,14 @@ const invoiceToPDF_Eng = async (values, products, sets, user, customer, totalPri
         extension: 'png'
     })
 
-    worksheet.addImage(INVOICE_LEFT, {
-        tl: { col: 1, row: 1 },
-        br: { col: 3, row: 9 }
-    })
-    worksheet.addImage(INVOICE_RIGHT, {
-        tl: { col: 9, row: 2 },
-        br: { col: 11, row: 6 }
-    })
+    // worksheet.addImage(INVOICE_LEFT, {
+    //     tl: { col: 1, row: 1 },
+    //     br: { col: 3, row: 9 }
+    // })
+    // worksheet.addImage(INVOICE_RIGHT, {
+    //     tl: { col: 9, row: 2 },
+    //     br: { col: 11, row: 6 }
+    // })
     worksheet.addImage(INVOICE_MEGAFENCE, {
         tl: { col: 1, row: 9 },
         br: { col: 3, row: 10 }
@@ -2197,10 +2197,10 @@ const invoiceToPDF_Eng = async (values, products, sets, user, customer, totalPri
         tl: { col: 5, row: 9 },
         br: { col: 7, row: 10 }
     })
-    worksheet.addImage(INVOICE_HECTOFENCE, {
-        tl: { col: 9, row: 9 },
-        br: { col: 11, row: 10 }
-    })
+    // worksheet.addImage(INVOICE_HECTOFENCE, {
+    //     tl: { col: 9, row: 9 },
+    //     br: { col: 11, row: 10 }
+    // })
 
     // fatura doldurulur.
     worksheet.getCell('F6').value = orderNumber
